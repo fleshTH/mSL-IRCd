@@ -1,6 +1,6 @@
 ;services
 alias loadGOD { 
-  sockopen -n GOD localhost 8888
+  sockopen GOD localhost $_server_port
 }
 on *:sockopen:GOD: { 
   sockwrite -n $sockname PASS @%$333$&&887654&&6543~!@@@@~!@!~^%$#&8&^%^&
